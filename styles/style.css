@@ -2,3 +2,32 @@ html{
   margin: 0;
   padding: 0;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+  background: dodgerblue;
+  height: 100%;
+}
+
+header{
+  height: 10vh;
+  background-color: red;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hotpink;
+  height: 90vh;
+}
+
+section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rebeccapurple;
+  height: 100%;
+  width: 100%;
+}
