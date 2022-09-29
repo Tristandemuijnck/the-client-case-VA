@@ -10,17 +10,31 @@
 <body>
   <header>
     <!-- Hier komt de header met logo -->
-    <img src="" alt="Logo">
+    <a href="/">
+      <img src="" alt="Logo">
+    </a>
+
+    <!-- Navigatie list aan bovenkant page, primary -->
+    <nav id="primair-nav" aria-label="primair">
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="waarneembaar.html">Waarneembaar</a></li>
+          <li><a href="robuust.html">Robuust</a></li>
+          <li><a href="bedienbaar.html">Bedienbaar</a></li>
+          <li><a href="begrijpelijk.html">Begrijpelijk</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
     <!-- Hier komt de main content van de tool -->
     <h1>Samen voor toegankelijkheid!</h1>
     <h2>Voldoet uw site al aan de eisen?</h2>
-    <section aria-label="Buttons naar verschillende toegankelijkheidscategorieen">
-      <button class="landing-btn">Waarneembaar</button>
-      <button class="landing-btn">Robuust</button>
-      <button class="landing-btn">Bedienbaar</button>
-      <button class="landing-btn">Begrijpelijk</button>
+    <section id="nav-buttons" aria-label="Buttons naar verschillende toegankelijkheidscategorieen">
+      <a href="waarneembaar.html"><button class="landing-btn">Waarneembaar</button></a>
+      <a href="robuust.html"><button class="landing-btn">Robuust</button></a>
+      <a href="bedienbaar.html"><button class="landing-btn">Bedienbaar</button></a>
+      <a href="begrijpelijk.html"><button class="landing-btn">Begrijpelijk</button></a>
     </section>
   </main>
 </body>
