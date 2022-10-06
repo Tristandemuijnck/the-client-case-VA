@@ -18,11 +18,53 @@ main a{
   text-decoration: none;
 }
 
+main .titleText{
+  background: white;
+  grid-area: title;
+  text-align: center;
+  max-width: 30rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: button1;
+}
+
+.btn-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: button2;
+}
+
+.btn-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: button3;
+}
+
+.btn-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: button4;
+}
+
+
+
 /* html{
   margin: 0;
   padding: 0;
 } */
 
+/* =======================BEFORE CHANGES============================= */
 #nav-buttons{
   display: flex;
   justify-content: space-around;
