@@ -14,6 +14,14 @@ body{
   background-color: white;
 }
 
+header a img{
+  width: 14em;
+}
+
+a{
+  text-decoration: none;
+}
+
 main a{
   text-decoration: none;
 }
@@ -57,22 +65,13 @@ main .titleText{
   grid-area: button4;
 }
 
+.card p{
+  color: white;
+  font-weight: 500;
+}
 
-
-/* html{
-  margin: 0;
-  padding: 0;
-} */
 
 /* =======================BEFORE CHANGES============================= */
-#nav-buttons{
-  display: flex;
-  justify-content: space-around;
-  align-items: center; /*flex-start voor top alignment*/
-  background-color: rebeccapurple;
-  height: 75vh;
-  width: 100%;
-}
 
 #secundair-nav{
   display: flex;
@@ -103,12 +102,6 @@ main .titleText{
   width: 100%;
 }
 
-.card-heading{
-  background: white;
-  padding: 0.3em 1em;
-  width: 66%;
-  margin: 5em auto;
-}
 
 
 

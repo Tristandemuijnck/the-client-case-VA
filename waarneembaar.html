@@ -5,83 +5,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/tablet.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
   <title>Waarneembaar</title>
 </head>
 <body>
-  <header>
-    <!-- Hier komt de header met logo -->
+	<header>
+    <!-- Header met logo -->
     <a href="/">
-        <img src="" alt="Logo">
+      <img class="logo" src="./assets/logo.png" alt="Logo">
     </a>
-
-    <!-- Navigatie list aan bovenkant page, primary
-    <nav id="primair-nav" aria-label="primair">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="waarneembaar.html">Waarneembaar</a></li>
-            <li><a href="robuust.html">Robuust</a></li>
-            <li><a href="bedienbaar.html">Bedienbaar</a></li>
-            <li><a href="begrijpelijk.html">Begrijpelijk</a></li>
-        </ul>
-    </nav> -->
   </header>
 
-  <!-- Navigatie list aan linkerkant page, secondary -->
-  <nav id="secundair-nav" aria-label="secundair">
+  <!-- Navigatie list aan linkerkant page, primair -->
+  <nav id="primair-nav" aria-label="primair">
     <ol>
         <li><a href="#ondertiteling">Ondertiteling</a></li>
         <li><a href="#audiobeschrijving">Audiobeschrijving</a></li>
-        <li><a href="#hints">Hints</a></li>
+        <li><a href="#aanwijzingen">Aanwijzingen</a></li>
         <li><a href="#voorlezen">Voorlezen</a></li>
         <li><a href="#suggesties">Suggesties</a></li>
-        <li><a href="#tekstgrootte">Tekstgrootte</a></li>
-        
+        <li><a href="#tekstgrootte">Tekstgrootte</a></li>  
+        <li><a href="#vergroten">Vergroten</a></li>  
     </ol>
   </nav>
 
-  <main>
-    <!-- Hier komt de main content van de waarneembaar page -->
+  <main class="content">
+    <!-- Main content van de waarneembaar page -->
     <section id="onderdelen" aria-label="Onderdelen">
 
         <div class="card-heading">
-            <article id="ondertiteling">
+            <span class="anchor" id="ondertiteling"></span>
+            <article class="ondertiteling">
                 <h2>Ondertiteling</h2>
-                <p>Filmpjes hebben een ondertiteling</p>
+                <p class="ondertitel">Filmpjes hebben een ondertiteling met de gesproken tekst en andere geluiden</p>
+                <div class="article-extra">
+                  <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Ondertiteling met de gesproken tekst en andere geluiden zorgt ervoor dat gebruikers met een auditieve beperking het filmpje kunnen volgen. Bovendien is een videobestand pas doorzoekbaar voor Google en andere zoekmachines als er audiodescriptie en ondertiteling aan is toegevoegd.</p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">De ene mediaplayer biedt meer toegankelijkheidsopties dan de andere. Kies voor multimediasoftware die is ingericht op toegankelijkheid. Daarnaast is Scribit.pro een handig online programma waarmee je video’s eenvoudig  kunt voorzien van ondertiteling, audiodescriptie en een tekstalternatief.</p>
+                  </div>
+                </div>
             </article>
         </div>
 
         <div class="card-heading">
-            <article id="audiobeschrijving">
+          <span class="anchor" id="audiobeschrijving"></span>
+            <article class="audiobeschrijving">
                 <h2>Audiobeschrijving</h2>
-                <p>Filmpjes hebben een audiobeschrijving</p>
+                <p class="ondertitel">Filmpjes en bewegend beeld hebben (indien nodig) een audiobeschrijving</p>
             </article>
         </div>
 
         <div class="card-heading">
-            <article id="hints">
-                <h2>Hints</h2>
-                <p>Fouten bestaan niet alleen uit visuele aanwijzingen</p>
+          <span class="anchor" id="aanwijzingen"></span>
+            <article class="aanwijzingen">
+                <h2>Aanwijzingen</h2>
+                <p class="ondertitel">Fouten en knoppen bestaan niet alléén uit visuele aanwijzingen (bijv. rode kleur).</p>
             </article>
         </div>
 
         <div class="card-heading">
-            <article id="voorlezen">
+          <span class="anchor" id="voorlezen"></span>
+            <article class="voorlezen">
                 <h2>Voorlezen</h2>
-                <p>De inhoud kan worden voorgelezen door een toepassing op de site/app</p>
+                <p class="ondertitel">De inhoud kan worden voorgelezen door een toepassing op de site/app</p>
             </article>
         </div>
 
         <div class="card-heading">
-            <article id="suggesties">
+          <span class="anchor" id="suggesties"></span>
+            <article class="suggesties">
                 <h2>Suggesties</h2>
-                <p>Fouten zijn duidelijk aangegeven en er is, als dat kan, een suggestie voor verbetering</p>
+                <p class="ondertitel">Fouten of niet ingevulde velden zijn duidelijk aangegeven en er is, als dat kan, een suggestie voor verbetering.</p>
             </article>
         </div>
 
         <div class="card-heading">
-            <article id="tekstgrootte">
+          <span class="anchor" id="tekstgrootte"></span>
+            <article class="tekstgrootte">
                 <h2>Tekstgrootte</h2>
-                <p>Gebruikers kunnen de tekstgrootte aanpassen</p>
+                <p class="ondertitel">Gebruikers kunnen de tekstgrootte aanpassen</p>
+            </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="vergroten"></span>
+            <article class="vergroten">
+                <h2>Vergroten</h2>
+                <p class="ondertitel">De inhoud kan worden uitvergroot tot 200% zonder dat er inhoud uit het zicht verdwijnt</p>
             </article>
         </div>
     </section>
