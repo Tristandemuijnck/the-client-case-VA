@@ -4,38 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/tablet.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
   <title>Toolgankelijkheid</title>
 </head>
 <body>
   <header>
     <!-- Hier komt de header met logo -->
     <a href="/">
-      <img src="" alt="Logo">
+      <img class="logo" src="./assets/logo.png" alt="Logo">
     </a>
-
-    <!-- Navigatie list aan bovenkant page, primary -->
-    <nav id="primair-nav" aria-label="primair">
-      <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="waarneembaar.html">Waarneembaar</a></li>
-          <li><a href="robuust.html">Robuust</a></li>
-          <li><a href="bedienbaar.html">Bedienbaar</a></li>
-          <li><a href="begrijpelijk.html">Begrijpelijk</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <!-- Hier komt de main content van de tool -->
-    <h1>Samen voor toegankelijkheid!</h1>
-    <h2>Voldoet uw site al aan de eisen?</h2>
-    <section id="nav-buttons" aria-label="Buttons naar verschillende toegankelijkheidscategorieen">
-      <a href="waarneembaar.html"><button class="landing-btn">Waarneembaar</button></a>
-      <a href="robuust.html"><button class="landing-btn">Robuust</button></a>
-      <a href="bedienbaar.html"><button class="landing-btn">Bedienbaar</button></a>
-      <a href="begrijpelijk.html"><button class="landing-btn">Begrijpelijk</button></a>
-    </section>
+    <div class="titleText">
+      <h1>Samen voor toegankelijkheid!</h1>
+      <h2>Voldoet uw site al aan de eisen?</h2>
+    </div>
+    
+    <div class="btn-1">
+      <a href="waarneembaar.html">
+        <div class="card">
+          <p>Waarneembaar</p>
+        </div>
+      </a>
+    </div>
+    <div class="btn-2">
+      <a href="robuust.html">
+        <div class="card">
+          <p>Robuust</p>
+        </div>
+      </a>
+    </div>
+    <div class="btn-3">
+      <a href="bedienbaar.html">
+        <div class="card">
+          <p>Bedienbaar</p>
+        </div>
+      </a>
+    </div>
+    <div class="btn-4">
+      <a href="begrijpelijk.html">
+        <div class="card">
+          <p>Begrijpelijk</p>
+        </div>
+      </a>
+    </div>
+
   </main>
 </body>
 </html>
