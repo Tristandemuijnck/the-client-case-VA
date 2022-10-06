@@ -1,2 +1,58 @@
 @media (min-width: 768px) and (max-width: 1023px) {
+    header{
+        height: 10vh;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    header a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    header a img{
+        width: 14em;
+    }
+
+    main{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "button1 button2"
+        "button3 button4";
+        height: 90vh;
+        justify-items: center;
+    }
+
+    main .titleText{
+        background: white;
+        grid-area: title;
+        text-align: center;
+        max-width: 30rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .titleText h1{
+        font-weight: 500;
+        font-size: 150%; 
+        color: #B9005F;
+        line-height: 2;
+    }
+
+    main .titleText h2{
+        font-weight: 500;
+        font-size: 120%;
+        color: #B9005F;
+    }
 }

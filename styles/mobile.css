@@ -46,6 +46,7 @@
         "button3"
         "button4";
         height: 90vh;
+        justify-items: center;
     }
 
     main .titleText{
