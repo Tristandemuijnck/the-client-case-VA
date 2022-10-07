@@ -121,7 +121,7 @@
         font-weight: 400;
     }
 
-    .ondertitel::after{
+    /* .ondertitel::after{
         content: "+";
         display: flex;
         flex-direction: row;
@@ -132,6 +132,21 @@
         height: 15px;
         width: 15px;
         padding: 5px;
+    } */
+
+    .ondertitel{
+        float: left;
+        vertical-align: middle;
+    }
+
+    .info-btn{
+        display: flex;
+        margin-left: auto;
+        padding: 2px 5px;
+        border: 1px solid white;
+        border-radius: 0.3em;
+        background: none;
+        color: white;
     }
 
     .article-extra{
