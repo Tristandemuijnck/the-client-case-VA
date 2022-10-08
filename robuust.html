@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/tablet.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <title>Robuust</title>
+</head>
+<body>
+	<header>
+  <!-- Header met logo -->
+    <a href="/">
+      <img class="logo" src="./assets/logo.png" alt="Logo">
+    </a>
+  </header>
+
+  <!-- Navigatie list aan linkerkant page, primair -->
+  <nav id="primair-nav" aria-label="primair">
+    <ol>
+        <li><a href="#structuur">Structuur</a></li>
+        <li><a href="#spaties">Spaties</a></li>
+        <li><a href="#tekstueel">Afbeeldingen alternatief</a></li>
+        <li><a href="#alt">Alt-tekst</a></li>
+        <li><a href="#deco">Decoratieve afbeeldingen</a></li>
+        <li><a href="#alternatief">Tekstueel alternatief</a></li>
+        <li><a href="#transcript">Transcript</a></li>
+        <li><a href="#tabel">Tabel</a></li>
+        
+    </ol>
+  </nav>
+
+  <main class="content">
+    <!-- Main content van de robuust page -->
+    <section id="onderdelen" aria-label="Onderdelen">
+
+        <div class="card-heading">
+            <span class="anchor" id="structuur"></span>
+            <article class="structuur">
+              <h2>Structuur</h2>
+              <p class="ondertitel">Is de juiste structuur van de tekst aangegeven via de editor van het CMS of in HTML-codes</p>
+              <button id="structuur-button" class="info-btn" onclick="switchDisplay('structuur-extra', 'structuur-button')">Meer info</button>
+              <div id="structuur-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">Als een website “onder water” goed in elkaar zit, dan is de basis voor toegankelijkheid gelegd. Ontwikkelaars kunnen in de technische standaard WCAG 2.1 meer lezen over technieken die gebruikt kunnen worden om aan de toegankelijkheidseisen te voldoen. </p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Voor het bouwen van websites zijn internationale standaarden ontwikkeld. Door de standaarden te volgen gebruik je de code op de manier waarop deze bedoeld is. Hulptechnologieën sluiten aan bij de ze standaarden. </p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="spaties"></span>
+            <article class="spaties">
+              <h2>Spaties</h2>
+              <p class="ondertitel">Er zijn geen spaties of tabs gebruikt om kolommen, tabellen of speciale teksteffecten te maken. </p>
+              <button id="spaties-button" class="info-btn" onclick="switchDisplay('spaties-extra', 'spaties-button')">Meer info</button>
+              <div id="spaties-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Als je wilt dat jouw tekst in kolommen of in een tabel verschijnt, gebruik dan niet de spatiebalk of de tab-toets om dit te doen, omdat dit de tekst onbegrijpelijk maakt voor bezoekers die gebruik maken van assistentietechnologie. Kolommen die op deze manier worden aangemaakt worden rij voor rij gelezen, niet kolom voor kolom.</p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">Tabellen moeten gemaakt worden met de tabelfuncties van de editor in het CMS. Voor kolommen en woorden met letters die verder uit elkaar staan, moet CSS gebruikt worden.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="tekstueel"></span>
+            <article class="tekstueel">
+                <h2>Afbeeldingen alternatief</h2>
+                <p class="ondertitel">Afbeeldingen die informatie overdragen hebben een tekstueel alternatief</p>
+                <button id="tekstueel-button" class="info-btn" onclick="switchDisplay('tekstueel-extra', 'tekstueel-button')">Meer info</button>
+                <div id="tekstueel-extra" class="article-extra" style="display: none;">
+                    <div class="article-uitleg">
+                        <h3>Uitleg</h3>
+                        <p class="uitleg">Door afbeeldingen te voorzien van een tekstueel alternatief maak je ze dus toegankelijk voor bezoekers die de afbeeldingen niet kunnen zien. Ook zoekmachines zoals Google maken gebruik van tekstalternatieven bij het indexeren van websites.</p>
+                      </div>
+                      <div class="article-tips">
+                        <h3>Tips</h3>
+                        <p class="tips">Een tekstueel alternatief werkt alleen als de beschrijving adequaat is. In veel gevallen gaat het om ‘vertellen wat je ziet’. Soms gaat het juist om ‘vertellen wat dit doet’, bijvoorbeeld bij een button in een formulier. En als een afbeelding geen informatie toevoegt, is het beter ook geen tekstalternatief te geven. Denk goed na over de tekstuele beschrijving. Iemand die alleen de tekstalternatieven ziet zou de informatie nog steeds moeten kunnen begrijpen en de website nog steeds moeten kunnen gebruiken.</p>
+                    </div>
+                </div>
+              </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="alt"></span>
+            <article class="alt">
+                <h2>Alt-tekst</h2>
+                <p class="ondertitel">Afbeeldingen die als link worden gebruikt, hebben een alt-tekst die het doel van de link beschrijft. </p>
+                <button id="alt-button" class="info-btn" onclick="switchDisplay('alt-extra', 'alt-button')">Meer info</button>
+                <div id="alt-extra" class="article-extra" style="display: none;">
+                    <div class="article-uitleg">
+                        <h3>Uitleg</h3>
+                        <p class="uitleg">De alt-tekst beschrijft het doel of de richting van de afbeelding in plaats van de afbeelding zelf.  </p>
+                      </div>
+                      <div class="article-tips">
+                        <h3>Tips</h3>
+                        <p class="tips">Als de afbeelding in een link staat met een tekst erbij, dan is de afbeelding ook niet-informatief en ook dan volstaat een leeg alt-attribuut. De screenreader leest dan de linktekst op. Als de afbeelding aanklikbaar is en in de link staat geen tekst, dan gebruik je wel een alt-tekst en beschrijf je waar de afbeelding naartoe linkt.</p>
+                    </div>
+                </div>
+              </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="deco"></span>
+            <article class="deco">
+                <h2>Decoratieve Afbeeldingen</h2>
+                <p class="ondertitel">Decoratieve afbeeldingen kunnen door hulptechnologieën genegeerd worden. </p>
+                <button id="deco-button" class="info-btn" onclick="switchDisplay('deco-extra', 'deco-button')">Meer info</button>
+                <div id="deco-extra" class="article-extra" style="display: none;">
+                    <div class="article-uitleg">
+                        <h3>Uitleg</h3>
+                        <p class="uitleg">Decoratieve afbeeldingen zijn niet relevant voor gebruikers van hulptechnologieën. De decoratieve afbeeldingen mogen de begrijpelijkheid niet beïnvloeden.  </p>
+                      </div>
+                      <div class="article-tips">
+                        <h3>Tips</h3>
+                        <p class="tips">Dit kan bijvoorbeeld door de alt-tekst leeg te laten. </p>
+                    </div>
+                </div>
+              </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="alternatief"></span>
+            <article class="alternatief">
+                <h2>Tekstueel alternatief</h2>
+                <p class="ondertitel">Audio en video hebben een kort tekstueel alternatief dat de inhoud beschrijft. </p>
+                <button id="alternatief-button" class="info-btn" onclick="switchDisplay('alternatief-extra', 'alternatief-button')">Meer info</button>
+                <div id="alternatief-extra" class="article-extra" style="display: none;">
+                    <div class="article-uitleg">
+                        <h3>Uitleg</h3>
+                        <p class="uitleg">Alle vormen van audio en video moeten een kort tekstalternatief krijgen. Dit is vergelijkbaar met de alt-tekst van afbeeldingen. Door deze korte tekst weten bezoekers die hulptechnologie gebruiken, ook als de audio of video zelf niet toegankelijk zou zijn, in ieder geval waar ze mee te maken hebben.</p>
+                      </div>
+                      <div class="article-tips">
+                        <h3>Tips</h3>
+                        <p class="tips">Hoe je dit alternatief plaatst hangt af van de techniek die gebruikt is om het multimediabestand op de webpagina te plaatsen.</p>
+                    </div>
+                </div>
+              </article>
+        </div>
+
+        <div class="card-heading">
+          <span class="anchor" id="transcript"></span>
+            <article class="transcript">
+                <h2>Transcript</h2>
+                <p class="ondertitel">Filmpjes, bewegend beeld en audio hebben (indien nodig) een transcript.</p>
+                <button id="transcript-button" class="info-btn" onclick="switchDisplay('transcript-extra', 'transcript-button')">Meer info</button>
+                <div id="transcript-extra" class="article-extra" style="display: none;">
+                    <div class="article-uitleg">
+                        <h3>Uitleg</h3>
+                        <p class="uitleg">In het transcript vertel je zo compleet mogelijk het verhaal van het filmpje. Je vertelt wat er gebeurt, dus wat er te zien en te horen is, en wat er gezegd wordt, door wie. Eventuele interactieve elementen neem je ook op in het transcript.</p>
+                      </div>
+                      <div class="article-tips">
+                        <h3>Tips</h3>
+                        <p class="tips">Kun je in het filmpje bijvoorbeeld op een knop drukken, dan neem je in het transcript een link op naar de pagina waar je die actie kunt uitvoeren.</p>
+                    </div>
+                </div>
+              </article>
+        </div>
+
+        <div class="card-heading">
+            <span class="anchor" id="tabel"></span>
+              <article class="tabel">
+                  <h2>Tabel</h2>
+                  <p class="ondertitel">Informatie die in een tabel hoort, staat ook écht in een tabel en heeft de juiste HTML-code.</p>
+                  <button id="tabel-button" class="info-btn" onclick="switchDisplay('tabel-extra', 'tabel-button')">Meer info</button>
+                  <div id="tabel-extra" class="article-extra" style="display: none;">
+                      <div class="article-uitleg">
+                          <h3>Uitleg</h3>
+                          <p class="uitleg">Gegevens in de tabel hebben zowel horizontaal als verticaal een relatie met elkaar. Met de juiste HTML-code kun je die relaties expliciet maken. Je geeft dan aan welke cellen koppen zijn en welke cellen gegevens bevatten. Bij complexe tabellen geef je ook nog eens aan welke kop precies bij welke cellen hoort. Bezoekers die hulptechnologie gebruiken hebben hier profijt van. Doordat de relaties in de code staan kan de hulptechnologie de informatie uit de tabel op een overzichtelijke en logische manier presenteren.</p>
+                        </div>
+                        <div class="article-tips">
+                          <h3>Tips</h3>
+                          <p class="tips">Sommige tabellen zitten heel ingewikkeld in elkaar, met meerdere niveaus en koppen. Het kan dan nodig zijn om code toe te voegen aan de tabel om de verbanden duidelijk te maken. Stel jezelf echter de vraag of de tabel niet kan worden vereenvoudigd of gesplitst in meerdere tabellen.</p>
+                      </div>
+                  </div>
+                </article>
+          </div>
+        
+    </section>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>

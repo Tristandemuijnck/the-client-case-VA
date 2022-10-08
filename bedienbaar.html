@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/tablet.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <title>Bedienbaar</title>
+</head>
+<body>
+	<header>
+  <!-- Header met logo -->
+    <a href="/">
+      <img class="logo" src="./assets/logo.png" alt="Logo">
+    </a>
+  </header>
+
+  <!-- Navigatie list aan linkerkant page, primair -->
+  <nav id="primair-nav" aria-label="primair">
+    <ol>
+        <li><a href="#captcha">Captcha</a></li> 
+        <li><a href="#automatisch">Automatisch beeld</a></li> 
+        <li><a href="#tijdslimiet">Tijdslimiet</a></li> 
+        <li><a href="#formulier">Formulieren</a></li> 
+        <li><a href="#bediening">Bediening formulieren</a></li> 
+        <li><a href="#invoer">Invoervelden</a></li> 
+    </ol>
+  </nav>
+
+  <main class="content">
+    <!-- Main content van de robuust page -->
+    <section id="onderdelen" aria-label="Onderdelen">
+
+        <div class="card-heading">
+            <span class="anchor" id="captcha"></span>
+            <article class="captcha">
+              <h2>Captcha</h2>
+              <p class="ondertitel">CAPTCHA’s zijn toegankelijk voor iedereen.  </p>
+              <button id="captcha-button" class="info-btn" onclick="switchDisplay('captcha-extra', 'captcha-button')">Meer info</button>
+              <div id="captcha-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">Een toegankelijke CAPTCHA moet op zijn minst beschikbaar zijn als audiofragment welke je met het toetsenbord kan bereiken. </p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Je kunt ook een vernieuwde CAPTCHA of andere controles gebruiken. </p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+            <span class="anchor" id="automatisch"></span>
+            <article class="automatisch">
+              <h2>Automatisch beeld</h2>
+              <p class="ondertitel">Bewegend beeld en geluid dat automatisch start kan uitgezet worden of stopt binnen 3 seconden.</p>
+              <button id="automatisch-button" class="info-btn" onclick="switchDisplay('automatisch-extra', 'automatisch-button')">Meer info</button>
+              <div id="automatisch-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg"></p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Beter is om helemaal geen beeld en geluid te gebruiken dat automatisch start.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+            <span class="anchor" id="tijdslimiet"></span>
+            <article class="tijdslimiet">
+              <h2>Tijdslimiet</h2>
+              <p class="ondertitel">Bezoekers hebben geen last van een tijdslimiet bij het invullen van gegevens </p>
+              <button id="tijdslimiet-button" class="info-btn" onclick="switchDisplay('tijdslimiet-extra', 'tijdslimiet-button')">Meer info</button>
+              <div id="tijdslimiet-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">Sommige bezoekers hebben meer tijd dan gemiddeld nodig om gegevens in te vullen. Bijvoorbeeld omdat zij voorleessoftware gebruiken of dyslectisch zijn. Deze bezoekers moeten de tijdslimiet op kunnen heffen of verlengen.</p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Zorg ervoor dat de gebruiker de tijdslimiet kan stopzetten, aanpassen of uitbreiden</p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+            <span class="anchor" id="formulier"></span>
+            <article class="formulier">
+              <h2>Formulieren</h2>
+              <p class="ondertitel">Bezoekers kunnen zelf fouten voorkomen bij formulieren waarbij belangrijke acties in gang worden gezet door te annuleren, controleren of bevestigen.</p>
+              <button id="formulier-button" class="info-btn" onclick="switchDisplay('formulier-extra', 'formulier-button')">Meer info</button>
+              <div id="formulier-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">Soms kan het verkeerd invullen van een formulier ingrijpende gevolgen hebben. Door bezoekers de mogelijkheid te bieden een inzending terug te trekken, help je hen grote fouten voorkomen.</p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Let vooral op bij wettelijke en financiële transacties, hier zijn de gevolgen het grootst.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+            <span class="anchor" id="bediening"></span>
+            <article class="bediening">
+              <h2>Bediening formulieren</h2>
+              <p class="ondertitel">Alle onderdelen van formulieren zijn via het toetsenbord te bereiken en bedienen in logische volgorde.</p>
+              <button id="bediening-button" class="info-btn" onclick="switchDisplay('bediening-extra', 'bediening-button')">Meer info</button>
+              <div id="bediening-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">Een formulier wat bruikbaar is d.m.v. het toetsenbord zorgt voor een betere gebruikservaring. </p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Gebruik een passende styling die bij de vormgeving past en ook nog eens toegankelijk is.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+
+        <div class="card-heading">
+            <span class="anchor" id="invoer"></span>
+            <article class="invoer">
+              <h2>Invoervelden</h2>
+              <p class="ondertitel">Alle invoervelden hebben een duidelijke instructie.</p>
+              <button id="invoer-button" class="info-btn" onclick="switchDisplay('invoer-extra', 'invoer-button')">Meer info</button>
+              <div id="invoer-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">Stel jezelf als beheerder de vraag wat je van de gebruiker wilt vragen. Is een invoerveld noodzakelijk? Mogen gebruikers een typefoutje maken?</p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Bied namen en alt-tekst aan invoervelden en groepeer bij elkaar horende velden, uiteraard met voldoende tussenruimte</p>
+                </div>
+              </div>
+            </article>
+        </div>
+        
+    </section>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
