@@ -40,8 +40,8 @@
             <article class="ondertiteling">
               <h2>Ondertiteling</h2>
               <p class="ondertitel">Filmpjes hebben een ondertiteling met de gesproken tekst en andere geluiden</p>
-              <button class="info-btn">Meer info</button>
-              <div class="article-extra">
+              <button id="ondertiteling-button" class="info-btn" onclick="switchDisplay('ondertiteling-extra', 'ondertiteling-button')">Meer info</button>
+              <div id="ondertiteling-extra" class="article-extra" style="display: none;">
                 <div class="article-uitleg">
                   <h3>Uitleg</h3>
                   <p class="uitleg">Ondertiteling met de gesproken tekst en andere geluiden zorgt ervoor dat gebruikers met een auditieve beperking het filmpje kunnen volgen. Bovendien is een videobestand pas doorzoekbaar voor Google en andere zoekmachines als er audiodescriptie en ondertiteling aan is toegevoegd.</p>
@@ -57,10 +57,20 @@
         <div class="card-heading">
           <span class="anchor" id="audiobeschrijving"></span>
             <article class="audiobeschrijving">
-                <h2>Audiobeschrijving</h2>
-                <p class="ondertitel">Filmpjes en bewegend beeld hebben (indien nodig) een audiobeschrijving</p>
-                <button class="info-btn">Meer info</button>
-              </article>
+              <h2>Audiobeschrijving</h2>
+              <p class="ondertitel">Filmpjes en bewegend beeld hebben (indien nodig) een audiobeschrijving</p>
+              <button id="audiobeschrijving-button" class="info-btn" onclick="switchDisplay('audiobeschrijving-extra', 'audiobeschrijving-button')">Meer info</button>
+              <div id="audiobeschrijving-extra" class="article-extra" style="display: none;">
+                <div class="article-uitleg">
+                  <h3>Uitleg</h3>
+                  <p class="uitleg">In een audiobeschrijving vertelt een stem belangrijke visuele details die je niet kunt afleiden uit dat wat te horen is. Dat kan bijvoorbeeld gaan om handelingen, personages en scène veranderingen, maar ook om tekst die op het scherm te zien is. De audiobeschrijving is dus een aanvulling op wat al te horen is. De stem van de audiobeschrijving vertelt op de momenten dat er pauzes zijn in het filmpje.</p>
+                </div>
+                <div class="article-tips">
+                  <h3>Tips</h3>
+                  <p class="tips">Als alle belangrijke visuele details ook af te leiden zijn uit het geluid is een audiobeschrijving niet verplicht. Bovendien kun je allen alleen een audiobeschrijving toevoegen als de audiotrack van de video zelf voldoende ‘rustmomenten’ heeft. De audiobeschrijving mag immers alleen tijdens die rustmomenten te horen zijn, omdat er anders twee stemmen door elkaar klinken.</p>
+                </div>
+              </div>
+            </article>
         </div>
 
         <div class="card-heading">
@@ -68,8 +78,18 @@
             <article class="aanwijzingen">
                 <h2>Aanwijzingen</h2>
                 <p class="ondertitel">Fouten en knoppen bestaan niet alléén uit visuele aanwijzingen (bijv. rode kleur).</p>
-                <button class="info-btn">Meer info</button>
-            </article>
+                <button id="aanwijzingen-button" class="info-btn" onclick="switchDisplay('aanwijzingen-extra', 'aanwijzingen-button')">Meer info</button>
+                <div id="aanwijzingen-extra" class="article-extra" style="display: none;">
+                  <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Door één aanwijzing te gebruiken is de kans groot dat hiermee bepaalde gebruikers uitgesloten worden. Gebruik altijd meerdere aanwijzingen. </p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">Gebruik niet alleen aanwijzingen uit hetzelfde spectrum (visueel, auditief), maar combineer aanwijzingen uit verschillende spectrums.  </p>
+                  </div>
+                </div>
+              </article>
         </div>
 
         <div class="card-heading">
@@ -77,8 +97,18 @@
             <article class="voorlezen">
                 <h2>Voorlezen</h2>
                 <p class="ondertitel">De inhoud kan worden voorgelezen door een toepassing op de site/app</p>
-                <button class="info-btn">Meer info</button>
-            </article>
+                <button id="voorlezen-button" class="info-btn" onclick="switchDisplay('voorlezen-extra', 'voorlezen-button')">Meer info</button>
+                <div id="voorlezen-extra" class="article-extra" style="display: none;">
+                  <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Voor het voorlezen hoeft geen speciale screenreader gebruikt te worden. </p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">Geef duidelijk aan waar gebruikers de inhoud kunnen laten voorlezen. </p>
+                  </div>
+                </div>
+              </article>
         </div>
 
         <div class="card-heading">
@@ -86,7 +116,17 @@
             <article class="suggesties">
                 <h2>Suggesties</h2>
                 <p class="ondertitel">Fouten of niet ingevulde velden zijn duidelijk aangegeven en er is, als dat kan, een suggestie voor verbetering.</p>
-                <button class="info-btn">Meer info</button>
+                <button id="suggesties-button" class="info-btn" onclick="switchDisplay('suggesties-extra', 'suggesties-button')">Meer info</button>
+                <div id="suggesties-extra" class="article-extra" style="display: none;">
+                  <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Wanneer het niet duidelijk is welk ingevuld veld foutief is ingevuld kunnen gebruikers vastlopen. </p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">Verrijk de foutmelding met een concreet invulvoorbeeld.</p>
+                  </div>
+                </div>
               </article>
         </div>
 
@@ -95,7 +135,17 @@
             <article class="tekstgrootte">
                 <h2>Tekstgrootte</h2>
                 <p class="ondertitel">Gebruikers kunnen de tekstgrootte aanpassen</p>
-                <button class="info-btn">Meer info</button>
+                <button id="tekstgrootte-button" class="info-btn" onclick="switchDisplay('tekstgrootte-extra', 'tekstgrootte-button')">Meer info</button>
+                <div id="tekstgrootte-extra" class="article-extra" style="display: none;">
+                  <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Door de teksten eenvoudig te vergroten kunnen mensen met een visuele beperking de inhoud beter waarnemen. </p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen aanpassen. </p>
+                  </div>
+                </div>
               </article>
         </div>
 
@@ -104,9 +154,20 @@
             <article class="vergroten">
                 <h2>Vergroten</h2>
                 <p class="ondertitel">De inhoud kan worden uitvergroot tot 200% zonder dat er inhoud uit het zicht verdwijnt</p>
-                <button class="info-btn">Meer info</button>
+                <button id="vergroten-button" class="info-btn" onclick="switchDisplay('vergroten-extra', 'vergroten-button')">Meer info</button>
+                <div id="vergroten-extra" class="article-extra" style="display: none;">
+                  <div class="article-uitleg">
+                    <h3>Uitleg</h3>
+                    <p class="uitleg">Door de inhoud eenvoudig te vergroten kunnen mensen met een visuele beperking de inhoud beter waarnemen. </p>
+                  </div>
+                  <div class="article-tips">
+                    <h3>Tips</h3>
+                    <p class="tips">Geef deze eis duidelijk aan bij de ontwikkelaar van de website/app</p>
+                  </div>
+                </div>
               </article>
         </div>
+        
     </section>
   </main>
   <script src="./scripts/script.js"></script>
