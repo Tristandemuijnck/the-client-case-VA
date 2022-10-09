@@ -4,21 +4,17 @@
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
-Live page: http://tristanva.student.fdnd.nl/
+Dit is de repository van mijn uitvoering van the client case - Vervoerregio Amsterdam.
+
+![image](https://user-images.githubusercontent.com/43402897/194764923-5da3c790-8201-4f8e-9cc8-e2a28ea3118a.png)
+
+Voor een live versie van het project: http://tristanva.student.fdnd.nl/
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-
-
-
-## Bronnen
+Voor het maken van deze site is gebruik gemaakt van HTML, CSS en JavaScript.
 
 ## Licentie
 
