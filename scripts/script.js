@@ -12,21 +12,6 @@ function switchDisplay(id, buttonId){
     }
 }
 
-function switchAllDisplay(){
-    const classDisplay = document.querySelectorAll('.article-extra');
-
-    classDisplay.forEach((classDisplayChild) => {
-        if(classDisplayChild.style.display == 'none'){
-            classDisplayChild.style.setProperty('display', 'flex');
-            switchButtonText(classDisplayChild.style.display);
-        }
-        else if(classDisplayChild.style.display == 'flex'){
-            classDisplayChild.style.setProperty('display', 'none');
-            switchButtonText(classDisplayChild.style.display);
-        }
-    });
-}
-
 function switchButtonText(classDisplayChild){
     const infoButton = document.querySelectorAll('.info-btn');
 
@@ -37,5 +22,23 @@ function switchButtonText(classDisplayChild){
         else if(classDisplayChild == 'flex'){
             infoButtonChild.innerHTML = "Minder info";
         }
+    });
+}
+
+function switchAllDisplayOpen(){
+    const classDisplay = document.querySelectorAll('.article-extra');
+
+    classDisplay.forEach((classDisplayChild) => {
+        classDisplayChild.style.setProperty('display', 'flex');
+        switchButtonText(classDisplayChild.style.display);
+    });
+}
+
+function switchAllDisplayClose(){
+    const classDisplay = document.querySelectorAll('.article-extra');
+
+    classDisplay.forEach((classDisplayChild) => {
+        classDisplayChild.style.setProperty('display', 'none');
+        switchButtonText(classDisplayChild.style.display);
     });
 }

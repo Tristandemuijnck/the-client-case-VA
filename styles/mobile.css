@@ -21,7 +21,7 @@
     }
 
     main{
-        background-color: white;
+        background-color: #EEEEEE;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -55,7 +55,7 @@
     }
 
     .card{
-        background-color: #B9005F;
+        background: linear-gradient(135deg,#b9005f 0%, #e30059 100%);
         width: 14em;
         height: 6em;
         display: flex;
@@ -94,6 +94,10 @@
     #primair-nav ol li a{
         color: white;
         font-weight: 400;
+    }
+
+    .switch-buttons{
+        display: none;
     }
 
     .content{

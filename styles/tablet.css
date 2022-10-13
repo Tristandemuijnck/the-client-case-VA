@@ -19,7 +19,7 @@
     }
 
     main{
-        background-color: white;
+        background-color: #EEEEEE;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -45,7 +45,7 @@
     }
 
     .card{
-        background-color: #B9005F;
+        background: linear-gradient(135deg,#b9005f 0%, #e30059 100%);
         width: 18em;
         height: 10em;
         display: flex;
@@ -66,7 +66,7 @@
         float: left;
         position: sticky;
         left: 0;
-        top: 12vh;
+        top: 18vh;
         padding-left: 1.8em;
         padding-top: 1em;
         padding-bottom: 1em;
@@ -81,6 +81,31 @@
 
     #primair-nav ol li a{
         color: white;
+    }
+
+    .switch-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        left: 0;
+        top: 12vh;
+        width: 12em;
+        align-items: center;
+        margin-left: 0.5em;
+        padding-top: 0.3em;
+        padding-bottom: 1em;
+        border-radius: 0.3em;
+        font-size: 1em;
+    }
+
+    .switch-btn{
+        background-color: #B9005F;
+        color: white;
+        border: 1px solid #B9005F;
+        padding: 10px 10px;
+        border-radius: 0.3em;
+        font-size: 0.7em;
     }
 
     .content{
