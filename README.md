@@ -9,7 +9,7 @@
 ## Beschrijving
 Dit is de repository van mijn uitvoering van the client case - Vervoerregio Amsterdam.
 
-![image](https://user-images.githubusercontent.com/43402897/194764923-5da3c790-8201-4f8e-9cc8-e2a28ea3118a.png)
+![home](https://user-images.githubusercontent.com/43402897/195668597-52511514-9cc2-4a91-a856-d0be7d19a44c.png)
 
 Voor een live versie van het project: http://tristanva.student.fdnd.nl/
 
