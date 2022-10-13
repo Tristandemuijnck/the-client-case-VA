@@ -20,14 +20,17 @@
 
   <!-- Navigatie list aan linkerkant page, primair -->
   <nav id="primair-nav" aria-label="primair">
-    <ol>
-        <li><a href="#captcha">Captcha</a></li> 
-        <li><a href="#automatisch">Automatisch beeld</a></li> 
-        <li><a href="#tijdslimiet">Tijdslimiet</a></li> 
-        <li><a href="#formulier">Formulieren</a></li> 
-        <li><a href="#bediening">Bediening formulieren</a></li> 
-        <li><a href="#invoer">Invoervelden</a></li> 
-    </ol>
+    <figure>
+      <figcaption>Bedienbaar</figcaption>
+      <ol>
+          <li><a href="#captcha">Captcha</a></li> 
+          <li><a href="#automatisch">Beeld</a></li> 
+          <li><a href="#tijdslimiet">Tijdslimiet</a></li> 
+          <li><a href="#formulier">Formulieren</a></li> 
+          <li><a href="#bediening">Bediening</a></li> 
+          <li><a href="#invoer">Invoervelden</a></li> 
+      </ol>
+    </figure>
   </nav>
   <div class="switch-buttons">
     <button class="switch-btn" onclick="switchAllDisplayOpen();">Alles openen</button>
@@ -64,10 +67,10 @@
               <p class="ondertitel">Bewegend beeld en geluid dat automatisch start kan uitgezet worden of stopt binnen 3 seconden.</p>
               <button id="automatisch-button" class="info-btn" onclick="switchDisplay('automatisch-extra', 'automatisch-button')">Meer info</button>
               <div id="automatisch-extra" class="article-extra" style="display: none;">
-                <div class="article-uitleg">
+                <!-- <div class="article-uitleg">
                   <h3>Uitleg</h3>
                   <p class="uitleg"></p>
-                </div>
+                </div> -->
                 <div class="article-tips">
                   <h3>Tips</h3>
                   <p class="tips">Beter is om helemaal geen beeld en geluid te gebruiken dat automatisch start.</p>

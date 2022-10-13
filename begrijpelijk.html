@@ -20,15 +20,18 @@
 
   <!-- Navigatie list aan linkerkant page, primair -->
   <nav id="primair-nav" aria-label="primair">
-    <ol>
-        <li><a href="#taalniveau">Taalniveau</a></li> 
-        <li><a href="#titel">Titel</a></li> 
-        <li><a href="#koppen">Koppen</a></li> 
-        <li><a href="#beschrijving">Beschrijving</a></li> 
-        <li><a href="#tekst">Tekst</a></li> 
-        <li><a href="#tabellen">Tabellen</a></li> 
-        <li><a href="#formulier">Formulier</a></li> 
-    </ol>
+    <figure>
+      <figcaption>Begrijpelijk</figcaption>
+      <ol>
+          <li><a href="#taalniveau">Taalniveau</a></li> 
+          <li><a href="#titel">Titel</a></li> 
+          <li><a href="#koppen">Koppen</a></li> 
+          <li><a href="#beschrijving">Beschrijving</a></li> 
+          <li><a href="#tekst">Tekst</a></li> 
+          <li><a href="#tabellen">Tabellen</a></li> 
+          <li><a href="#formulier">Formulier</a></li> 
+      </ol>
+    </figure>
   </nav>
   <div class="switch-buttons">
     <button class="switch-btn" onclick="switchAllDisplayOpen();">Alles openen</button>
@@ -160,10 +163,10 @@
             <p class="ondertitel">De werking van het formulier is voorspelbaar (bijv. verzenden pas na zelf klikken of informatie daarover).</p>
             <button id="formulier-button" class="info-btn" onclick="switchDisplay('formulier-extra', 'formulier-button')">Meer info</button>
             <div id="formulier-extra" class="article-extra" style="display: none;">
-              <div class="article-uitleg">
+              <!-- <div class="article-uitleg">
                 <h3>Uitleg</h3>
                 <p class="uitleg"></p>
-              </div>
+              </div> -->
               <div class="article-tips">
                 <h3>Tips</h3>
                 <p class="tips">Zorg dat jouw bezoeker op de hoogte is van de wijziging die plaats gaat vinden. Informeren betekent dat je in tekst aangeeft wat er zal gebeuren als er een optie wordt geselecteerd of formulierveld wordt ingevuld. Voorkom ook dat een formulier automatisch wordt verzonden zodra het laatste veld is ingevuld. Maak bijvoorbeeld een verzendknop onder het formulier. Pas als de bezoeker de knop aanklikt, verandert de inhoud van de pagina.</p>
