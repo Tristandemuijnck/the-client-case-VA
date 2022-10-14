@@ -13,7 +13,8 @@ Toolgankelijkheid - Een overzicht van toegankelijkheidsverbeteringen voor het ve
 ## Beschrijving
 Dit is de repository van mijn uitvoering van the client case - Vervoerregio Amsterdam.
 
-De tool is gemaakt voor de user story: "Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen bekijken, zodat ik een gevoel kan krijgen wat er moet gebeuren om mijn website/app toegankelijker te maken op het terrein van waarneembaarheid, robuustheid, begrijpelijkheid en bedienbaarheid"
+De tool is gemaakt voor de user story: 
+> "Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen bekijken, zodat ik een gevoel kan krijgen wat er moet gebeuren om mijn website/app toegankelijker te maken op het terrein van waarneembaarheid, robuustheid, begrijpelijkheid en bedienbaarheid"
 
 ### Preview
 ![home](https://user-images.githubusercontent.com/43402897/195668597-52511514-9cc2-4a91-a856-d0be7d19a44c.png)
