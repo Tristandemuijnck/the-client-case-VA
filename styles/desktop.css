@@ -242,4 +242,52 @@
         padding: 0.7em;
         width: 50vw;
     }
+
+    /* Footer */
+    footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: #B9005F solid 1px;
+        margin-top: 3em;
+    }
+
+    .contact-container{
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 3em;
+    }
+
+    .adres{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .adres-text{
+        padding-left: 0.2em;
+    }
+
+    .footer-svg{
+        width: 0.8em;
+        height: 0.8em;
+        margin-top: 3px;
+    }
+
+    .footer-svg-phone{
+        width: 0.8em;
+        margin-top: 0.3em;
+        margin-right: 0.2em;
+        margin-bottom: 0.4em;
+    }
+
+    .svg-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
