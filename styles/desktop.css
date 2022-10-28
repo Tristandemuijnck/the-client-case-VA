@@ -272,6 +272,10 @@
         padding-left: 0.2em;
     }
 
+    .contact-text{
+        color: black;
+    }
+
     .footer-svg{
         width: 0.8em;
         height: 0.8em;
