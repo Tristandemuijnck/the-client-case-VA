@@ -33,7 +33,7 @@
         "button4";
         height: 90vh;
         justify-items: center;
-        overflow: auto;
+        /* overflow: auto; */
         clear: both;
     }
 
@@ -126,15 +126,17 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        height: 80vh;
-        margin-top: 1em;
-        padding-bottom: 4em;
+        height: 100%;
+        /* margin-top: 1em;
+        padding-bottom: 4em; */
     }
 
     .anchor{
         display: block;
-        height: 20vh;
-        margin-top: -20vh;
+        /* height: 20vh;
+        margin-top: -20vh; */
+        height: 12em;
+        margin-top: -12em;
         visibility: hidden;
     }
 
